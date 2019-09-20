@@ -1,0 +1,20 @@
+class Dosen():
+    def __init__(self, nama, nip, alamat, no_telp):
+        self.nama = nama
+        self.nip = nip
+        self.alamat = alamat
+        self.no_telp = no_telp
+ 
+    def data_dosen(self):
+        print('nama :', self.nama, '\nnip :',self.nip, '\nalamat :',self.alamat, '\nno_telp :',self.no_telp)
+ 
+class Mahasiswa(Dosen):
+ 
+    def data_dosen(self):
+        print('nama :', self.nama,'\nalamat :', self.alamat, '\nno_telp :', self.no_telp)
+ 
+dosen1 = Dosen('Fatiah Adiba', '902194801924', 'Jl. Malengkeri', '081349284621')
+dosen1.data_dosen()
+ 
+mahasiswa = Mahasiswa('Muhammad Nur Yusri','12345678', 'Jln. Tinumbu', '0895804734146')
+mahasiswa.data_dosen()
